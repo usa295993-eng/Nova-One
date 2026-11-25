@@ -1,0 +1,19 @@
+<!doctype html><html lang="hi"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Nova AI</title>
+<style>
+:root{color-scheme:dark}*{box-sizing:border-box}body{margin:0;background:#0b1020;color:#f5f6ff;font:15px system-ui;padding:20px;max-width:900px;margin:auto}header{padding:12px 0 22px}.logo{display:inline-grid;place-items:center;background:linear-gradient(135deg,#8b7cff,#31c9d5);color:#071020;width:38px;height:38px;border-radius:12px;font-weight:900;margin-right:8px}h1{font-size:clamp(28px,6vw,42px);margin:24px 0 8px}p{color:#aab5d0;line-height:1.5}.panel,.card{background:#151f36;border:1px solid #2b3959;border-radius:16px;padding:15px}textarea{width:100%;min-height:100px;background:#0b1224;color:white;border:1px solid #354365;border-radius:12px;padding:12px;font:inherit}button{background:#8b7cff;color:white;border:0;border-radius:11px;padding:12px 16px;font-weight:700;margin-top:10px}#result{display:none;white-space:pre-wrap;margin-top:12px;padding:12px;background:#0b1224;border-radius:12px;color:#dfe6ff}.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin-top:15px}.card{min-height:120px}.card b{display:block;margin:7px 0}.card small{color:#aab5d0;line-height:1.4}@media(min-width:650px){.grid{grid-template-columns:repeat(3,1fr)}}footer{color:#8290ae;font-size:12px;margin:25px 0}
+</style><body>
+<header><span class="logo">N</span><b>NOVA AI · SUPER AGENT</b><h1>तुम्हारा AI काम करने वाला साथी।</h1><p>एक ही जगह पर AI Agent, Video, Social Media, Tools और Business सुविधाएँ।</p></header>
+<section class="panel"><b>AI Agent को क्या काम देना है?</b><p>उदाहरण: मेरे बिजनेस के लिए 3 Reels की स्क्रिप्ट और कैप्शन बनाओ।</p><textarea id="prompt" placeholder="अपना काम यहाँ लिखो..."></textarea><button onclick="runAgent()">काम शुरू करो</button><button onclick="document.getElementById('prompt').value=''" style="background:#34415f">साफ करो</button><div id="result"></div></section>
+<h2>हमारे 10 AI सेक्शन</h2><section class="grid">
+<div class="card">🤖<b>1. AI Agent</b><small>कई चरणों वाले काम की योजना और ऑटोमेशन।</small></div>
+<div class="card">🎬<b>2. AI Video Creator</b><small>स्क्रिप्ट, वॉइस, वीडियो और एडिटिंग।</small></div>
+<div class="card">📱<b>3. AI Social Media Manager</b><small>पोस्ट, कैप्शन, कैलेंडर और शेड्यूलिंग।</small></div>
+<div class="card">🧰<b>4. AI Tools Center</b><small>अलग-अलग जरूरतों के लिए AI टूल्स।</small></div>
+<div class="card">📈<b>5. AI SEO & Business</b><small>SEO, AEO और बिजनेस ग्रोथ।</small></div>
+<div class="card">💻<b>6. AI Coding & Learning</b><small>कोडिंग, वेबसाइट और ऐप बनाने में मदद।</small></div>
+<div class="card">🎨<b>7. AI Image & Design</b><small>थंबनेल, लोगो, पोस्टर और डिजाइन।</small></div>
+<div class="card">📄<b>8. AI Documents</b><small>रिपोर्ट, सारांश और प्रेजेंटेशन।</small></div>
+<div class="card">🎧<b>9. Customer Support Agent</b><small>कस्टमर सवालों के जवाब और सपोर्ट।</small></div>
+<div class="card">🛒<b>10. E-commerce Agent</b><small>प्रोडक्ट लिस्टिंग और ऑनलाइन स्टोर कंटेंट।</small></div>
+</section><footer>यह शुरुआती clickable design prototype है। अभी इसमें असली AI API, login, database या video rendering नहीं जुड़ा है।</footer>
+<script>function runAgent(){let p=document.getElementById('prompt').value.trim(),r=document.getElementById('result');r.style.display='block';r.textContent=p?'काम मिला: '+p+'\n\nयह अभी डिजाइन प्रोटोटाइप है। असली AI चलाने के लिए backend और AI model/API जोड़ना होगा। किसी paid सेवा से पहले कीमत बताएँगे।':'पहले अपना काम लिखो।'}</script></body></html>
